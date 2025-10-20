@@ -1,242 +1,48 @@
+
 <!DOCTYPE html>
 <html lang="ro">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Tomsa-Dental | Stomatologie Leova</title>
-  <meta name="description" content="Clinică stomatologică modernă în Leova. Profilaxie, estetică dentară, endodonție, protetică, implanturi. Programări: 0799 10 895." />
-  <meta property="og:title" content="Tomsa-Dental" />
-  <meta property="og:description" content="Zâmbete sănătoase, îngrijire cu adevărat umană. Leova, str. Mihai Eminescu 35/1." />
-  <meta property="og:type" content="website" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    .card { border-radius: 1.5rem; box-shadow: 0 8px 20px rgba(0,0,0,.06); }
-    .pill { border-radius: 9999px; border:1px solid #e5e7eb; padding:.25rem .75rem; background: rgba(255,255,255,.7); }
-    .star { color: #f59e0b; }
-    .btn { border-radius: 1rem; padding:.75rem 1.25rem; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px);} to { opacity: 1; transform: translateY(0);} }
+    .fade-in { animation: fadeInUp 1s ease-in-out; }
   </style>
 </head>
-<body class="bg-zinc-50 text-zinc-900">
-  <div class="w-full bg-zinc-900 text-zinc-100">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 flex flex-col md:flex-row items-center justify-between gap-2">
-      <div class="text-sm">Or. Leova, str. Mihai Eminescu 35/1 · CP 6301 · Republica Moldova</div>
-      <a href="tel:+37379910895" class="text-sm underline underline-offset-4">Programări: 0799 10 895</a>
+<body class="bg-gray-50 text-gray-900">
+  <header class="bg-white shadow p-4 flex items-center justify-between">
+    <div class="flex items-center space-x-2">
+      <img src="assets/logo.png" alt="Tomsa-Dental" class="h-12 w-auto fade-in">
+      <h1 class="font-bold text-2xl fade-in">Tomsa-Dental</h1>
     </div>
-  </div>
-  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="h-10 w-10 rounded-2xl bg-zinc-900 text-white grid place-items-center font-black">TD</div>
-        <span class="font-semibold tracking-tight">Tomsa-Dental</span>
-      </div>
-      <nav class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#home" class="hover:text-zinc-700">Acasă</a>
-        <a href="#services" class="hover:text-zinc-700">Servicii</a>
-        <a href="#about" class="hover:text-zinc-700">Despre</a>
-        <a href="#team" class="hover:text-zinc-700">Medici</a>
-        <a href="#gallery" class="hover:text-zinc-700">Galerie</a>
-        <a href="#reviews" class="hover:text-zinc-700">Recenzii</a>
-        <a href="#appointments" class="hover:text-zinc-700 font-semibold">Programări</a>
-      </nav>
-      <a href="#appointments" class="ml-4 inline-flex items-center gap-2 bg-zinc-900 text-white btn shadow hover:shadow-md">Rezervă acum</a>
-    </div>
+    <nav class="space-x-4 fade-in">
+      <a href="#servicii" class="hover:text-blue-600">Servicii</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </nav>
   </header>
-  <section id="home" class="relative overflow-hidden">
-    <div class="absolute inset-0" style="background: radial-gradient(ellipse at top, #f4f4f5, #ffffff 40%);"></div>
-    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20">
-      <div class="grid lg:grid-cols-2 gap-10 items-center">
-        <div>
-          <div class="flex gap-2 flex-wrap mb-4">
-            <span class="pill">Stomatologie modernă</span><span class="pill">Ortodonție</span><span class="pill">Implanturi</span>
-          </div>
-          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight">Zâmbete sănătoase,<span class="block">îngrijire cu adevărat umană.</span></h1>
-          <p class="mt-4 text-lg text-zinc-600 max-w-xl">La Tomsa-Dental, combinăm tehnologia actuală cu grijă autentică. Suntem în Leova și te primim cu răbdare, explicații clare și rezultate frumoase.</p>
-          <div class="mt-6 flex items-center gap-3">
-            <a href="#appointments" class="bg-zinc-900 text-white btn shadow hover:shadow-md">Fă o programare</a>
-            <a href="tel:+37379910895" class="border px-5 py-3 rounded-2xl hover:bg-zinc-50">Sună: 0799 10 895</a>
-          </div>
-          <div class="mt-6 text-sm text-zinc-600">* Radiografia inclusă când este necesar, conform planului de tratament.</div>
-        </div>
-        <div class="relative">
-          <img src="https://images.unsplash.com/photo-1629909613480-c1a43da7f1e6?q=80&w=1920&auto=format&fit=crop" alt="Clinică modernă Tomsa-Dental" class="rounded-3xl shadow-lg object-cover w-full" style="height:420px;"/>
-          <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow p-4 w-[260px]">
-            <div class="text-sm font-semibold">Program azi</div>
-            <div class="text-sm text-zinc-600">Luni–Vineri: 9:00–18:00</div>
-            <div class="text-sm text-zinc-600">Sâmbătă: 9:00–13:00</div>
-            <div class="text-sm text-zinc-600">Duminică: Închis</div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+  <section class="text-center py-12 fade-in">
+    <h2 class="text-4xl font-bold mb-4">Zâmbetul tău, prioritatea noastră</h2>
+    <p>Clinică stomatologică modernă din Leova, Republica Moldova.</p>
   </section>
-  <section id="services" class="scroll-mt-24 py-16 px-4 sm:px-6 lg:px-8 bg-white">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-8 text-center"><h2 class="text-3xl md:text-4xl font-bold tracking-tight">Serviciile noastre</h2><p class="mt-3 text-zinc-600 max-w-2xl mx-auto">Tratăm cu grijă fiecare dinte și fiecare om.</p></div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="card bg-white p-6 border"><div class="text-3xl">🩺</div><h3 class="mt-3 font-semibold text-lg">Consultații &amp; Plan Tratament</h3><p class="mt-2 text-sm text-zinc-600">Evaluare completă, radiografie* și plan personalizat.</p><div class="mt-4 text-sm text-zinc-700">De la <strong>350 MDL</strong></div></div>
-        <div class="card bg-white p-6 border"><div class="text-3xl">🪥</div><h3 class="mt-3 font-semibold text-lg">Stomatologie Preventivă</h3><p class="mt-2 text-sm text-zinc-600">Detartraj, periaj profesional, fluorizare, sigilări.</p><div class="mt-4 text-sm text-zinc-700">De la <strong>300 MDL</strong></div></div>
-        <div class="card bg-white p-6 border"><div class="text-3xl">🦷</div><h3 class="mt-3 font-semibold text-lg">Terapie Dentară</h3><p class="mt-2 text-sm text-zinc-600">Tratamente carii, obturații compozit estetice.</p><div class="mt-4 text-sm text-zinc-700">De la <strong>450 MDL</strong></div></div>
-        <div class="card bg-white p-6 border"><div class="text-3xl">🧪</div><h3 class="mt-3 font-semibold text-lg">Endodonție (canale)</h3><p class="mt-2 text-sm text-zinc-600">Izolare cu digă, instrumentație rotativă.</p><div class="mt-4 text-sm text-zinc-700">De la <strong>1200 MDL</strong></div></div>
-      </div>
-    </div>
+
+  <section id="program" class="text-center py-6 bg-blue-50 fade-in">
+    <h3 class="text-2xl font-semibold mb-2">Program de lucru</h3>
+    <p>Luni - Vineri: 9:00 - 18:00</p>
+    <p>Sâmbătă: Închis</p>
+    <p>Duminică: Închis</p>
   </section>
-  <section id="about" class="scroll-mt-24 py-16 px-4 sm:px-6 lg:px-8 bg-white">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-8 text-center"><h2 class="text-3xl md:text-4xl font-bold tracking-tight">De ce Tomsa-Dental?</h2><p class="mt-3 text-zinc-600 max-w-2xl mx-auto">Curat, sigur, explicat — și cu rezultate estetice.</p></div>
-      <div class="grid lg:grid-cols-2 gap-8 items-center">
-        <div class="space-y-4 text-zinc-700">
-          <p>Suntem o clinică stomatologică din Leova, pe str. Mihai Eminescu 35/1 (CP 6301), care pune accent pe <strong>calitate</strong>, <strong>igienă impecabilă</strong> și <strong>comunicare prietenoasă</strong>.</p>
-          <ul class="grid sm:grid-cols-2 gap-3">
-            <li class="flex items-start gap-2"><span class="mt-1">✅</span><span>Sterilizare conform protocoalelor europene</span></li>
-            <li class="flex items-start gap-2"><span class="mt-1">✅</span><span>Echipamente moderne și materiale premium</span></li>
-            <li class="flex items-start gap-2"><span class="mt-1">✅</span><span>Planuri de tratament transparente</span></li>
-            <li class="flex items-start gap-2"><span class="mt-1">✅</span><span>Opțiuni estetice naturale</span></li>
-          </ul>
-          <div class="flex gap-3"><a href="#appointments" class="bg-zinc-900 text-white btn shadow hover:shadow-md">Programare</a><a href="#reviews" class="border btn hover:bg-zinc-50">Vezi recenzii</a></div>
-        </div>
-        <div class="grid grid-cols-2 gap-4">
-          <img class="rounded-3xl h-44 w-full object-cover card" src="https://images.unsplash.com/photo-1588771930290-88c2cb03f6b8?q=80&w=1600&auto=format&fit=crop" alt="Clinică Tomsa-Dental" />
-          <img class="rounded-3xl h-44 w-full object-cover card" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1600&auto=format&fit=crop" alt="Clinică Tomsa-Dental" />
-          <img class="rounded-3xl h-44 w-full object-cover card" src="https://images.unsplash.com/photo-1588774069267-3cd8a2eac7c6?q=80&w=1600&auto=format&fit=crop" alt="Clinică Tomsa-Dental" />
-          <img class="rounded-3xl h-44 w-full object-cover card" src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=1600&auto=format&fit=crop" alt="Clinică Tomsa-Dental" />
-        </div>
-      </div>
-    </div>
+
+  <section id="contact" class="text-center py-12 fade-in">
+    <h3 class="text-2xl font-semibold mb-4">Contact</h3>
+    <p>Adresa: Or. Leova, str. Mihai Eminescu 35/1, Cod 6301</p>
+    <p>Telefon pentru programări: 079910895</p>
   </section>
-  <section id="team" class="scroll-mt-24 py-16 px-4 sm:px-6 lg:px-8 bg-white">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-8 text-center"><h2 class="text-3xl md:text-4xl font-bold tracking-tight">Echipa noastră</h2><p class="mt-3 text-zinc-600 max-w-2xl mx-auto">Medici cu mâini sigure și explicații pe înțelesul tău.</p></div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="border bg-white p-4 card"><img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=1600&auto=format&fit=crop" alt="Dr. Andrei Tomșa" class="rounded-2xl object-cover w-full" style="height:240px;"/><div class="mt-3"><div class="font-semibold">Dr. Andrei Tomșa</div><div class="text-sm text-zinc-600">Medic stomatolog – protetică/estetică</div></div></div>
-        <div class="border bg-white p-4 card"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1600&auto=format&fit=crop" alt="Dr. Irina C." class="rounded-2xl object-cover w-full" style="height:240px;"/><div class="mt-3"><div class="font-semibold">Dr. Irina C.</div><div class="text-sm text-zinc-600">Medic endodont – tratamente canal</div></div></div>
-        <div class="border bg-white p-4 card"><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=1600&auto=format&fit=crop" alt="Dr. Bogdan S." class="rounded-2xl object-cover w-full" style="height:240px;"/><div class="mt-3"><div class="font-semibold">Dr. Bogdan S.</div><div class="text-sm text-zinc-600">Ortodont – aparate fixe &amp; alignere</div></div></div>
-      </div>
-    </div>
-  </section>
-  <section id="gallery" class="scroll-mt-24 py-16 px-4 sm:px-6 lg:px-8 bg-white">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-8 text-center"><h2 class="text-3xl md:text-4xl font-bold tracking-tight">Galerie</h2><p class="mt-3 text-zinc-600 max-w-2xl mx-auto">Spații curate, aparatură modernă, atenție la detalii.</p></div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <img class="rounded-3xl h-56 w-full object-cover card" src="https://images.unsplash.com/photo-1588771930290-88c2cb03f6b8?q=80&w=1600&auto=format&fit=crop" alt="Galerie 1"/>
-        <img class="rounded-3xl h-56 w-full object-cover card" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1600&auto=format&fit=crop" alt="Galerie 2"/>
-        <img class="rounded-3xl h-56 w-full object-cover card" src="https://images.unsplash.com/photo-1588774069267-3cd8a2eac7c6?q=80&w=1600&auto=format&fit=crop" alt="Galerie 3"/>
-        <img class="rounded-3xl h-56 w-full object-cover card" src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?q=80&w=1600&auto=format&fit=crop" alt="Galerie 4"/>
-        <img class="rounded-3xl h-56 w-full object-cover card" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1600&auto=format&fit=crop" alt="Galerie 5"/>
-        <img class="rounded-3xl h-56 w-full object-cover card" src="https://images.unsplash.com/photo-1520012218364-1f6a0c1dfb62?q=80&w=1600&auto=format&fit=crop" alt="Galerie 6"/>
-      </div>
-    </div>
-  </section>
-  <section id="reviews" class="scroll-mt-24 py-16 px-4 sm:px-6 lg:px-8 bg-white">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-8 text-center"><h2 class="text-3xl md:text-4xl font-bold tracking-tight">Recenzii reale de la pacienți</h2><p class="mt-3 text-zinc-600 max-w-2xl mx-auto">Mulțumim pentru încredere!</p></div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="border bg-white p-6 card"><div class="flex items-center gap-2"><div class="h-10 w-10 rounded-full bg-zinc-200 grid place-items-center">E</div><div><div class="font-semibold">Elena P.</div><div class="text-xs text-zinc-600">Verificat • Google</div></div></div><div class="mt-3 star">★★★★★</div><p class="mt-2 text-sm text-zinc-700">Personal foarte atent și calm. Am făcut o curățare profesională — rezultatul minunat!</p></div>
-        <div class="border bg-white p-6 card"><div class="flex items-center gap-2"><div class="h-10 w-10 rounded-full bg-zinc-200 grid place-items-center">V</div><div><div class="font-semibold">Victor M.</div><div class="text-xs text-zinc-600">Verificat • Google</div></div></div><div class="mt-3 star">★★★★★</div><p class="mt-2 text-sm text-zinc-700">Mi-au salvat un dinte cu tratament endodontic modern. Fără durere, totul explicat clar.</p></div>
-        <div class="border bg-white p-6 card"><div class="flex items-center gap-2"><div class="h-10 w-10 rounded-full bg-zinc-200 grid place-items-center">A</div><div><div class="font-semibold">Ana R.</div><div class="text-xs text-zinc-600">Verificat • Google</div></div></div><div class="mt-3 star">★★★★★</div><p class="mt-2 text-sm text-zinc-700">Copilul meu a suportat perfect sigilările. Atmosferă prietenoasă și curată.</p></div>
-        <div class="border bg-white p-6 card"><div class="flex items-center gap-2"><div class="h-10 w-10 rounded-full bg-zinc-200 grid place-items-center">S</div><div><div class="font-semibold">Sergiu D.</div><div class="text-xs text-zinc-600">Verificat • Google</div></div></div><div class="mt-3 star">★★★★☆</div><p class="mt-2 text-sm text-zinc-700">Am făcut coroane ceramice — arată foarte natural. Recomand!</p></div>
-        <div class="border bg-white p-6 card"><div class="flex items-center gap-2"><div class="h-10 w-10 rounded-full bg-zinc-200 grid place-items-center">M</div><div><div class="font-semibold">Maria T.</div><div class="text-xs text-zinc-600">Verificat • Google</div></div></div><div class="mt-3 star">★★★★★</div><p class="mt-2 text-sm text-zinc-700">Programare rapidă și respectarea orelor. Profesioniști adevărați.</p></div>
-      </div>
-    </div>
-  </section>
-  <section id="appointments" class="scroll-mt-24 py-16 px-4 sm:px-6 lg:px-8 bg-zinc-900 text-white">
-    <div class="mx-auto max-w-7xl">
-      <div class="mb-8 text-center"><h2 class="text-3xl md:text-4xl font-bold tracking-tight">Programări</h2><p class="mt-3 text-zinc-300 max-w-2xl mx-auto">Completează formularul sau sună direct la <a class="underline" href="tel:+37379910895">0799 10 895</a>.</p></div>
-      <div class="grid lg:grid-cols-2 gap-8 items-start">
-        <form id="appt" class="bg-white text-zinc-900 p-6 card space-y-4" onsubmit="return handleSubmit(event)">
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div><label class="text-sm">Nume și prenume</label><input required class="mt-1 w-full rounded-xl border px-3 py-2" name="name" placeholder="Ex: Popescu Ana" /></div>
-            <div><label class="text-sm">Telefon</label><input type="tel" required class="mt-1 w-full rounded-xl border px-3 py-2" name="phone" placeholder="Ex: 0799 10 895" /></div>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div><label class="text-sm">E-mail (opțional)</label><input type="email" class="mt-1 w-full rounded-xl border px-3 py-2" name="email" placeholder="exemplu@mail.com" /></div>
-            <div><label class="text-sm">Serviciu dorit</label>
-              <select name="service" class="mt-1 w-full rounded-xl border px-3 py-2">
-                <option>Consultații & Plan Tratament</option>
-                <option>Stomatologie Preventivă</option>
-                <option>Terapie Dentară</option>
-                <option>Endodonție (canale)</option>
-                <option>Protetică & Estetică</option>
-                <option>Chirurgie & Implantologie</option>
-                <option>Ortodonție</option>
-                <option>Pedodonție</option>
-              </select>
-            </div>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div><label class="text-sm">Data preferată</label><input type="date" name="date" class="mt-1 w-full rounded-xl border px-3 py-2" /></div>
-            <div><label class="text-sm">Ora preferată</label><input type="time" name="time" class="mt-1 w-full rounded-xl border px-3 py-2" /></div>
-          </div>
-          <div><label class="text-sm">Mesaj</label><textarea name="message" class="mt-1 w-full rounded-xl border px-3 py-2" rows="4" placeholder="Spune-ne pe scurt ce te deranjează…"></textarea></div>
-          <button class="w-full bg-zinc-900 text-white btn shadow hover:shadow-md">Trimite cererea</button>
-          <p id="success" class="hidden text-sm text-green-600">Mulțumim! Te vom contacta pentru confirmare.</p>
-        </form>
-        <div class="space-y-6">
-          <div class="border border-white/10 p-6 rounded-3xl bg-white/5">
-            <h3 class="font-semibold">Adresa &amp; Contact</h3>
-            <div class="mt-2 text-zinc-300 text-sm space-y-1">
-              <div>Or. Leova, str. Mihai Eminescu 35/1</div>
-              <div>Cod poștal 6301, Republica Moldova</div>
-              <div>Telefon: <a href="tel:+37379910895" class="underline">0799 10 895</a></div>
-            </div>
-            <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
-              <div class="rounded-xl bg-white text-zinc-900 p-4">
-                <div class="font-medium">Program</div>
-                <div>Luni–Vineri: 9:00–18:00</div>
-                <div>Sâmbătă: 9:00–13:00</div>
-                <div>Duminică: Închis</div>
-              </div>
-              <a href="https://www.google.com/maps/search/?api=1&query=Leova%20Mihai%20Eminescu%2035%2F1" target="_blank" class="rounded-xl border p-4 hover:bg-white/10">Deschide pe Google Maps →</a>
-            </div>
-          </div>
-          <iframe title="Harta Tomsa-Dental" class="w-full h-72 rounded-3xl border" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Leova%20Mihai%20Eminescu%2035%2F1&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="bg-white border-t">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 grid md:grid-cols-4 gap-8">
-      <div class="col-span-2">
-        <div class="flex items-center gap-3"><div class="h-10 w-10 rounded-2xl bg-zinc-900 text-white grid place-items-center font-black">TD</div><span class="font-semibold tracking-tight">Tomsa-Dental</span></div>
-        <p class="mt-3 text-sm text-zinc-600 max-w-md">Clinică stomatologică în Leova, specializată în profilaxie, estetică, endodonție, protetică și chirurgie orală.</p>
-      </div>
-      <div><div class="font-semibold">Contact</div>
-        <ul class="mt-3 space-y-1 text-sm text-zinc-600">
-          <li>Leova, str. Mihai Eminescu 35/1</li>
-          <li>CP 6301, Republica Moldova</li>
-          <li>Tel: <a href="tel:+37379910895" class="underline">0799 10 895</a></li>
-        </ul>
-      </div>
-      <div><div class="font-semibold">Linkuri rapide</div>
-        <ul class="mt-3 space-y-1 text-sm text-zinc-600">
-          <li><a href="#services" class="hover:underline">Servicii</a></li>
-          <li><a href="#reviews" class="hover:underline">Recenzii</a></li>
-          <li><a href="#appointments" class="hover:underline">Programări</a></li>
-          <li><a href="#faq" class="hover:underline">Întrebări frecvente</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 text-xs text-zinc-500 flex items-center justify-between">
-        <span>© <span id="year"></span> Tomsa-Dental • Toate drepturile rezervate</span>
-        <a href="#" class="hover:underline">Politica de confidențialitate</a>
-      </div>
-    </div>
+
+  <footer class="bg-gray-900 text-white text-center p-4 mt-8">
+    © 2025 Tomsa-Dental. Toate drepturile rezervate.
   </footer>
-  <a href="tel:+37379910895" class="fixed bottom-6 right-6 rounded-full shadow-lg bg-zinc-900 text-white px-5 py-3">Sună acum</a>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Dentist","name":"Tomsa-Dental","image":"https://images.unsplash.com/photo-1588771930290-88c2cb03f6b8?q=80&w=1600&auto=format&fit=crop","telephone":"+37379910895","address":{"@type":"PostalAddress","streetAddress":"str. Mihai Eminescu 35/1","addressLocality":"Leova","postalCode":"6301","addressCountry":"MD"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"13:00"}]}
-  </script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    function handleSubmit(e){
-      e.preventDefault();
-      const form = e.target;
-      const data = Object.fromEntries(new FormData(form).entries());
-      console.log('Cerere programare:', data);
-      form.reset();
-      document.getElementById('success').classList.remove('hidden');
-      return false;
-    }
-  </script>
 </body>
 </html>
